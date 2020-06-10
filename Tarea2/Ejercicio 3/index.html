@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <form action="mailto:tomasdiaz898@hotmail.com" method="POST" enctype="text/plain">
+        <p><label>Escribe tu nombre: <input type="text" name="nombre"></label></p>
+        <p><label>Introduce tu contraseña: <input type="password" name="password"></label></p>
+        <p><label>Envíame una foto tuya: <input type="file" name="profilePic" accept="image/jpg, image/png"></label></p>
+        <p>Este manual te parece:<br>
+            <input type="radio" name="opinion" value="mbueno" checked>Muy bueno<br>
+            <input type="radio" name="opinion" value="bueno">Bueno<br>
+            <input type="radio" name="opinion" value="malo">Malo<br>
+            <input type="radio" name="opinion" value="mMalo">Muy Malo<br>
+        </p>
+        <p><input type="checkbox" name="notify" checked>Avisarme de actualizaciones</p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
