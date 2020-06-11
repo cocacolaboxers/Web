@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jose Tomas Diaz">
+    <meta name="description" content="Ejemplo de un libro de visitas">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Libro de visitas</h1>
+    <form name="miformulario" action="mailto:tomasdiaz898@hotmail.com" method="POST" enctype="text/plain">
+        <p><b>Datos personales:</b><br><label>Nombre:<input type="text" name="nombre" required></label></p>
+        <p><label>Apellidos: <input type="text" name="apellido" required></label></p>
+        <p><b>Indica un pseudónimo y una contraseña:<br></b><label>Pseudónimo: <input type="text" name="pseudo" maxlength="16" required>
+        </label><label>Contraseña: <input type="password" name="password" maxlength="12" required></label></p>
+        <b>Otros datos:</b>
+        <table>
+            <thead>
+                <tr>
+                    <td>Edad:</td>
+                    <td>¿Dónde vives?</td>
+                    <td>Aficiones:</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="0_10">0-10
+                    </td>
+                    <td>
+                        <input type="radio" name="location" value="santiago">Santiago
+                    </td>
+                    <td>
+                        <input type="checkbox" name="aficiones" value="musica">Música
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="11_20">11-20
+                    </td>
+                    <td>
+                        <input type="radio" name="location" value="sd">Santo Domingo
+                    </td>
+                    <td>
+                        <input type="checkbox" name="aficiones" value="deportes">Deportes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="21_30">21-30
+                    </td>
+                    <td>
+                        <input type="radio" name="location" value="lromana">La Romana
+                    </td>
+                    <td>
+                        <input type="checkbox" name="aficiones" value="pintura">Pintura
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="31_40">31-40
+                    </td>
+                    <td>
+                        <input type="radio" name="location" value="sancris">San Cristóbal
+                    </td>
+                    <td>
+                        <input type="checkbox" name="aficiones" value="lectura">Lectura
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="edad" value="41plus">41 o más
+                    </td>
+                    <td>
+                        <input type="radio" name="location" value="otros">Otros: <input type="text" name="location_otros">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="aficiones" value="otras">Otras: <input type="text" name="aficiones_otras">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Restaurar</button>
+    </form>
+    </div>
+</body>
+</html>
