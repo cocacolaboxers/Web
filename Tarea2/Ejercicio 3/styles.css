@@ -1,0 +1,17 @@
+body{
+    background-color: whitesmoke;
+}
+
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#formContainer{
+    background-color: lemonchiffon;
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
