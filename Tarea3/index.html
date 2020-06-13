@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:orange">
+        <div class="navbar-nav">
+            <a class="nav-link active" href="#"><i class="fas fa-home"></i> Inicio</a>
+            <a class="nav-link" href="lugares.html"><i class="fas fa-location-arrow"></i> Lugares favoritos</a>
+        </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">La vida, o es una aventura o no es nada</p>
+                <footer class="blockquote-footer">Helen Keller</footer>
+            </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel">
+                <div class="panel-body"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRIW4uNk_fcIiITpHhxCVegqbZWcHmmFBW5G9lZBzbK0vegO2RA&usqp=CAU" width="200" height="200" class="rounded" alt="...">
+                <p class="lead">¿Te interesa saber cuáles son mis lugares favoritos?</p>
+                <a class="btn btn-primary" href="lugares.html" role="button">¡Conócelos!</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel">
+                <div class="panel-body"></div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAADfCAMAAADcKv+WAAAAgVBMVEX///8AAAC3t7eqqqofHx/19fV7e3vX19dLS0v5+fnx8fHHx8fi4uL09PTs7OygoKC+vr67u7s/Pz9sbGxra2vn5+eJiYmxsbFhYWHNzc3U1NRTU1MkJCR1dXXe3t5GRkZbW1uRkZENDQ2ampqCgoIrKys6OjowMDASEhKUlJQZGRleTq2NAAAKgElEQVR4nN1d2WKqMBAtpWpRivuKIlS73f//wFtbLULOZBMJw3k12jkNZJbM8vDgGNHAP05XcTo7+uvAtTDVY+6vvAL2fqtYJtmbB5C5lqsyLLeI3w8eXctWCcavJMFvrFyLdzuCWEbwG9u+axFvRE9B8ITItZA3YaDB0HvlfLJudBh63rtrOe0x12PoeV3XklqD1hVlDFyLaomjNkPPcy2rHRIDhkztnIkJRY+jdtTSFzk4njjvZhQZGgCaKjHHwrXExpiaUmR3qAbGDL2la5kNsSR4rPxeJ+jALeZmxqWIRHd9+Rh6WKFLgY0Bn9MrD/8Fff7lTl4LIKVY8O8PYMHWlbRWWCifQ/ZPKtD7++KKDFA8uBHWCuhVLOmECCyZuJHWCmsgf9nORofqixNprTAUpRe03iOgOHYhrB2AahdMUPQw71wIawcQ0RgJi5B14EBWSwDhRV8J2XhzB8JaIRRlfxVXoTOVjSk+EmVPwTJwWcXmZQQHKnJ4gQnExobr6j2ByJDlEqV6FkXvgWVIbXCJGf/T3B1gyTIxU9HuwIUgXM7kRhVoA2xgg5OXyXkDjPAZXIhurmqW1RLAwCZiFoAiD7f4SxTcxyvB0cvjSAV+xhqvBOcN8c9oGPbajx8wg3iE4cAbRqwERyoLKxWoxSdiKbjbwWdvwwBSbWJiKdCg1NJGAbi6R2JpX1zK4mYD+EhDYmlHXMrCvDFQduC1/VerrHYAO0NecjOlOAMUqbUGh2+D4AOGe2oxuIP7qFNYK8BUFDJTASgN8t/RFKDLDBQmPgNEI5vuExPpRB2D9dM65TUHkcNAGyzgC81Ov0GX2yfQLiCwEhrtTO0IhpIzEtwxku+tewRk4iLhDp8AVif1iWyIkCzGkByRrMJT6Mr3DEn6PjhtGmuFg0uMC2ThJhDkaahHHElSTylP8QdgPeV2uQUIwPzhWfZFZChs6pLaBJSuOEHuNiCfpIGFN6G0FkN6W4hud6S77gYgEHoFeXIC+i58FYP+fB4mYZIkYTiP6t3nPggKX0FxPYE0afjQCTeDkT/8Ok7TeP9BaNuPeJb5gxoS5iXKUIMh8p09aTWngM/dfdOtOjBxOIcqhcaIDI3d/Sy+sfwv/1PlJaCMVTuk97mvU23hu+pQMCqoUkFqX1iCyt+/QB2d0K/708Fr1U9rBILBBag995XiF4xRbfG8XBd6OolsOIp1E1TZLMnIz45dAcfDcl1O9O3BNgvX0Hho5PrUDhIDvvcl/4Pb7pU/FEjcpl88a1gf4EKqAhAhkc7hSefb3fPOKJS9pxlAMyxt1AWydvrKPfnD87eXE6rrSvXyLVQHsiVA/lJm9AMztbKeaOYh3omicKz2tB5RE2iXPN/pQfU+i3+GiuvaQ99hh0VhVaBglVeue43iSqruKba49qgrV0xmXo1xobEuci1uVnKvRkzePRHQP8rN8Kcbq35OLEoPNEV43b5P9nG6mn6bWt/o7mZpPJHYV5cTz6T3hQZiq2IuYh+38ar7NfRH600ii9JEa2yznE8EWdzTArY2fu/vxNvGu+NwOUjmZo87MrV+tX+1J/bshoBYsBmNNpHpa5wDuNW/VyKVqgu3CbJiMOsna6dKV831pbVYLPFTmmXa3YPGxHkat3jinChWt4kNKFLDFKtSibsm3K+IFP/hmsFfkR/XvTI2gwNl6DWjj5Io1xsZWqIzQUK87W81EiEBrrb2hHG6l6om7L86P2oe4CM5w909VHd60IFtwoU1EKwLz1NQ5VsCukNqQjYeqOoZwldRkvlzATp07s9AiQ9RqjEy73XyP3X6SdQP1Jc0QVpRy1EAN5vuUyvAJnqwzFzrNhnsvut0PNg9dw93Q+v3wIHjto/yBgd1M2QO6CXUA+/TYd4oHcTftIQizIP4xUM7KGY0w5P/2gKKsjSKU5IIf4qyRog/afb8Kcpu4X+aXPCnKInL/JrN/ClKNrFPLGBGUdKJ/BxLajHFSyESe4rkg7qnF3CjSBw3eZE1f4pYaaT5Av4Useq/Clvzp4izm65CFy2giO9e84/bQBGFLq5ibK2giIJluTStoIjaP+Sp0+2gCFzGPLGpHRRBOmtekd0OiqCLR34v0w6KICEjv2JpA8UI3bDkHav4U4xw6ld+F8id4oAq8snzf3hTDOnATZ5cwZqiJN366qKbM0VZIdnVHRJniqB17h+uljGmKLmsKeRWMKaI7oTPKNQu8KUoy6ItJGTwpSiZqVqsQeVLkc7ALGVG8aVIqoxym0q+FKl7RSG7jS9FKpFWyMVjTJEy38pZmIwpoqDUCeWafs4UKc1YqvXhTJFK+i5Vu7OmSHAs5dPypkiYOMWEWuYUsbtRHPfLnSIezllYwZ4iPFYLzYPYU4QX4YU6Zv4UUcpGJv+cHUWQTlzo/dsCiqBevlCk0AKKwKsqFHC1gCLgsJV/zI6iqmF8CyiCQrxC0+4WUPwURSmMw+FPEZXsF9wp9hRBd+NScwHmFAMc3ChUbvOmSESoil21OFOMqM4ZRUkYU6T7lxXjU2wpRnS7s9IENa4UZVdvpW66XClKemW1JFQsq3Yrr2VKUdLSTegpxJMimj92htilmCdF+oYYDAbiSZFMm0JTc3hSpHbxDbUV4kmRKHfDHV54UgQNmFpHkejlCntgMKVIVC3CGV1cKRIHDmrVw5UikceYgpVsKT5kkCPoK8SXIk4tAkIwpqjb/KxCiqrJB5UDdq4V7ZsKKd5lFIkU6FEVz9QqKXpvvapJyIHyNcXXpVKKntett72mtDTzArG9lrqX3wlken2thw74R6fCIjA0R6tlHd2Ge1tjszStQc1gq7VElA17+aiPpPjHy2nTcJCgTv9IxVCobU09fcEuilNCkFeiMW1H3Yc7U40/qwLg5i0VFqEoiLjXZWi1i4/vO2HuAZupXWEVHA20Az93DTCrHGOn0YfUGgF8lEAnWlh5JJ88bjT7YnevdvCE2gL9PTO48In+9wfGYxtSv/L38oWcUgMWU2fj+7AXvXRK6M9HslmuNJ664+omXAZj+rRL0Req62+vpPlYwW6GvrSXO1TJismQFWPm3zA1MPFhfsY18BdBas598ZyNjJuMh+OFagDiCURn73q38YLJbqhFtN8bH6bK2YBnkC7EPQYD6mKyOh78wbo3f+kEZ0csCDr9cDMYD7NdbHhQkMaxtiZvOiTDu5RTMBXY3vwLlWBLMySKHfTx/U693GsUlgHkjq7u+wzx+wbM0Zj2OqFQup0bNMdfKGOu1Fp3xKvSeupbc7xWRVF1E6INsdeIi3UsDblSz/fAr3xOpQ40hz9ZPWYgcrqu/aV80o7fmg8kTfHj0fGrnnUohck8lr7haDRJ5GJ+uOmQNsDCcETcxsCYU13TzIc17OXBIvze03slP7Si3v3Hu+qR2DZgGzyqzovJwcDpS4b3GeW692+bNDMfDbvT9LmMeLVbLC0GvGyGN5qIZUwfmzB+rYxkOZU1i9LG58xvwtQuCtEou8k53R/HdQTZb0Y4XqyM9/Np9TVu8uYBBMloeIwlHbLO+JysFv5g3sQ3TxtRbz32h9mxO53NVmmcpqvZdNddHPzlaJNUMZ3rP00ClCIvyAKbAAAAAElFTkSuQmCC" width="200" height="200" class="rounded" alt="...">
+                <p class="lead">¿Prefieres recomendarme un lugar que has visitado?</p>
+                <a class="btn btn-primary" href="recomendaciones.html" role="button">¡Vamos!</a>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+</html>
