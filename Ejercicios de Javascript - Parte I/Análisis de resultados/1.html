@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta es mi respuesta del análisis de resultados 1">
     <meta name="author" content="Jose Tomas Diaz">
-    <title>Document</title>
+    <title>Ejercicio 1</title>
 </head>
 <body>
     <script>
@@ -13,17 +13,17 @@
         var max, min;
 
         numbers[0] = parseInt(prompt('Digite el primer número:', ''));
-            if(numbers[0] < 0)
+            while(numbers[0] < 0)
                 numbers[0] = parseInt(prompt('El número no puede ser negativo. Intente otra vez:', ''));
         
         numbers[1] = parseInt(prompt('Digite el segundo número:', ''));
-            if(numbers[1] < 0)
+            while(numbers[1] < 0)
                 numbers[1] = parseInt(prompt('El número no puede ser negativo. Intente otra vez:', ''));
             while (numbers[1] == numbers[0])
                 numbers[1] = parseInt(prompt('Los números no se pueden repetir. Intente otra vez:', ''));
         
         numbers[2] = parseInt(prompt('Digite el tercer número:', ''));
-            if(numbers[2] < 0)
+            while(numbers[2] < 0)
                 numbers[2] = parseInt(prompt('El número no puede ser negativo. Intente otra vez:', ''));
             while(numbers[2] == numbers[1] || numbers[2] == numbers[0])
                 numbers[2] = parseInt(prompt('Los números no se pueden repetir. Intente otra vez:', ''));
@@ -45,8 +45,6 @@
         document.write('El mayor es: ' + max);
         document.write('<br>');
         document.write('El menor es: ' + min);
-
-
     </script>
 </body>
 </html>

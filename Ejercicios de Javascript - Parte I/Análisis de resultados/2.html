@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es mi respuesta del análisis de resultados 2">
+    <meta name="author" content="Jose Tomas Diaz">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        var number = parseInt(prompt('Digite su número:', ''));
+        while(number < 0 || number > 999){
+            if(number < 0)
+                number = parseInt(prompt('El número no puede ser negativo. Intente otra vez:', ''));
+            else if(number > 999)
+                number = parseInt(prompt('El número no puede tener más de 3 cifras. Intente otra vez:', ''));
+        }
+
+        if(parseInt(number/100) > 0)
+            document.write('El número tiene 3 cifras.');
+        else if(parseInt(number/10) > 0)
+            document.write('El número tiene 2 cifras.');
+        else
+            document.write('El número tiene 1 cifra.');
+    </script>
+</body>
+</html>
