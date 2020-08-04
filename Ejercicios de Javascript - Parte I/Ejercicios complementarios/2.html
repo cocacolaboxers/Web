@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es mi respuesta del Ejercicio Complementario 2">
+    <meta name="author" content="Jose Tomas Diaz">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        var triangl1 = [3];
+        var triangl2 = [3];
+        var triangl3 = [3];
+        var triangl4 = [3];
+
+        var equilatCount = 0;
+        var isocelCount = 0;
+        var escalenCount = 0;
+        
+        do{
+            triangl1[0] = parseInt(prompt('Digite el valor del primer lado del primer triángulo:',''));
+            triangl1[1] = parseInt(prompt('Digite el valor del segundo lado del primer triángulo:',''));
+            triangl1[2] = parseInt(prompt('Digite el valor del tercer lado del primer triángulo:',''));
+        }while(triangl1[0] <= 0 || triangl1[1] <= 0 || triangl1[2] <= 0);
+
+        if(triangl1[0] == triangl1[1] && triangl1[0] == triangl1[2]){
+            document.write('El primer triángulo es equilátero');
+            document.write('<br>');
+            equilatCount++;
+        }
+        else if((triangl1[0] == triangl1[1]) || (triangl1[0] == triangl1[2]) || (triangl1[1] == triangl1[2])){
+            document.write('El primer triángulo es isóceles');
+            document.write('<br>');
+            isocelCount++;
+        }else{
+            document.write('El primer triángulo es escaleno');
+            document.write('<br>');
+            escalenCount++;
+        }
+
+        do{
+            triangl2[0] = parseInt(prompt('Digite el valor del primer lado del segundo triángulo:',''));
+            triangl2[1] = parseInt(prompt('Digite el valor del segundo lado del segundo triángulo:',''));
+            triangl2[2] = parseInt(prompt('Digite el valor del tercer lado del segundo triángulo:',''));
+        }while(triangl2[0] <= 0 || triangl2[1] <= 0 || triangl2[2] <= 0);
+
+        if(triangl2[0] == triangl2[1] && triangl2[0] == triangl2[2]){
+            document.write('El segundo triángulo es equilátero');
+            document.write('<br>');
+            equilatCount++;
+        }
+        else if((triangl2[0] == triangl2[1]) || (triangl2[0] == triangl2[2]) || (triangl2[1] == triangl2[2])){
+            document.write('El segundo triángulo es isóceles');
+            document.write('<br>');
+            isocelCount++;
+        }else{
+            document.write('El segundo triángulo es escaleno');
+            document.write('<br>');
+            escalenCount++;
+        }
+
+        do{
+            triangl3[0] = parseInt(prompt('Digite el valor del primer lado del tercer triángulo:',''));
+            triangl3[1] = parseInt(prompt('Digite el valor del segundo lado del tercer triángulo:',''));
+            triangl3[2] = parseInt(prompt('Digite el valor del tercer lado del tercer triángulo:',''));
+        }while(triangl3[0] <= 0 || triangl3[1] <= 0 || triangl3[2] <= 0);
+
+        if(triangl3[0] == triangl3[1] && triangl3[0] == triangl3[2]){
+            document.write('El tercer triángulo es equilátero');
+            document.write('<br>');
+            equilatCount++;
+        }
+        else if((triangl3[0] == triangl3[1]) || (triangl3[0] == triangl3[2]) || (triangl3[1] == triangl3[2])){
+            document.write('El tercer triángulo es isóceles');
+            document.write('<br>');
+            isocelCount++;
+        }else{
+            document.write('El tercer triángulo es escaleno');
+            document.write('<br>');
+            escalenCount++;
+        }
+
+        do{
+            triangl4[0] = parseInt(prompt('Digite el valor del primer lado del cuarto triángulo:',''));
+            triangl4[1] = parseInt(prompt('Digite el valor del segundo lado del cuarto triángulo:',''));
+            triangl4[2] = parseInt(prompt('Digite el valor del tercer lado del cuarto triángulo:',''));
+        }while(triangl4[0] <= 0 || triangl4[1] <= 0 || triangl4[2] <= 0);
+
+        if(triangl4[0] == triangl4[1] && triangl4[0] == triangl4[2]){
+            document.write('El cuarto triángulo es equilátero');
+            document.write('<br>');
+            equilatCount++;
+        }
+        else if((triangl4[0] == triangl4[1]) || (triangl4[0] == triangl4[2]) || (triangl4[1] == triangl4[2])){
+            document.write('El cuarto triángulo es isóceles');
+            document.write('<br>');
+            isocelCount++;
+        }else{
+            document.write('El cuarto triángulo es escaleno');
+            document.write('<br>');
+            escalenCount++;
+        }
+
+        document.write('El total de triángulos equiláteros es: ' + equilatCount);
+        document.write('<br>');
+        document.write('El total de triángulos isóceles es: ' + isocelCount);
+        document.write('<br>');
+        document.write('El total de triángulos escalenos es: ' + escalenCount);
+        document.write('<br>');
+
+    </script>
+</body>
+</html>
