@@ -1,5 +1,3 @@
-En JavaScript, undefined constituye un tipo, mientras que null constituye un objeto.
-
 Cuando hablamos de undefined, nos referimos a una variable que ha sido declarada pero no se le ha
 asignado un valor. 
 
