@@ -1,0 +1,29 @@
+JavaScript no obstructivo es un paradigma en el uso del lenguaje de programación JavaScript. 
+Entre sus principios figuran la separación de la funcionalidad JavaScript de las capas de estructura/contenido 
+y de presentación de una página y el uso de buenas prácticas a fin de evitar los problemas de incompatibilidad 
+de la programación tradicional en JavaScript (inconsistencias entre navegadores y falta de escalabilidad). 
+
+Así mismo, se puede considerar como parte del movimiento a favor de los estándares web y 
+pretende asegurar que incluso los usuarios que no han habilitado propiamente el JavaScript 
+puedan interactuar satisfactoriamente con páginas que implementen el lenguaje. 
+
+El siguiente segmento de código ejemplifica el uso de JavaScript intrusivo: 
+
+<input type=”button” id=”btn” value=”pulsa aquí” onclick=”helloWorld();” />
+
+En este caso, estamos suscribiendo un evento como atributo del input. 
+
+Podemos conseguir la misma funcionalidad, utilizando un método no intrusivo, de la siguiente forma:
+
+<input type=”button” id=”btn” value=”pulsa aquí” />
+
+Y pondríamos el código del onclick de la siguiente forma:
+
+<script language=”javascript” type=”text/javascript”>
+    window.onload = function(){
+        document.getElementById(“btn”).onclick = helloWorld;
+    }
+    function helloWorld(){
+        alert(“hola”);
+    }
+</script>
